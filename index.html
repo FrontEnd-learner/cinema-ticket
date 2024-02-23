@@ -10,6 +10,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+        <form class="ticket-form" action="https://echo.htmlacademy.ru" method="POST">
+            <!-- HEADER -->
+            <header class="movie-info">
+                <div class="movie-info__title-wrapper">
+                    <h1 class="movie-info__title">League of Justice</h1>
+                    <span class="movie-info__badge">Reald 3D</span>
+                    <span class="movie-info__badge">12+</span>
+                </div>
+
+                <p class="movie-info__cinema-name">Sunshine Cinema</p>
+                <time class="movie-info__time" datetime="2024-02-23 19:00">Tonight, 7 PM</time>
+
+                <button class="ticket-form__close" type="button"></button>
+            </header>
+
+            <hr class="divider">
+
+            <section class="cinema">
+                <div class="cinema__screen">
+                    <img class="cinema__poster" src="img/justice-league.jpg" alt="img" width="700" height="321" srcset="img/justice-league.jpg 1x, img/justice-league@2x.jpg 2x">
+                </div>
+
+                <div class="cinema__seats">
+                    <ol class="cinema__seats-list">
+                        <li class="cinema__seat">
+                            <label class="seat">
+                                <input class="seat__checkbox" type="checkbox" name="row-1-seat-1">
+                                <span class="seat__control">
+                                    <span class="seat__number">1</span>
+                                </span>
+                            </label>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </form>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
